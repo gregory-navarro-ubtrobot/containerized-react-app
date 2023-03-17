@@ -1,4 +1,4 @@
-FROM node:19.03.12-alpine3.12
+FROM node:latest
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ RUN npm install -g create-react-app
 RUN userdel -r node
 ARG USER_ID
 ARG GROUP_ID
-RUN addgroup --gid $GROUP_ID user 
+# RUN addgroup --gid $GROUP_ID user 
 RUN adduser --disabled-password --gecos '' --uid $USER_ID --gid $GROUP_ID user
 
 # Set the active user and open the terminal

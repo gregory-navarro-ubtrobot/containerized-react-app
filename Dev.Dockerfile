@@ -1,4 +1,4 @@
-FROM node:19.03.12-alpine3.12
+FROM node:latest
 
 # Set the working directory
 WORKDIR /app
