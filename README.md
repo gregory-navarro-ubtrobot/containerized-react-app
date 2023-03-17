@@ -13,6 +13,8 @@ The first command builds the image and the second command launches the image. Th
 1. `docker build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) -t react-app-setup - < ./Setup.Dockerfile` note: if you are on MacOS, you might find the Group ID is 20 instead of 1000, just comment out the `addgroup` line in the Dockerfile
 2. `docker run -it -v $(pwd):/app react-app-setup`
 3. `npx create-react-app my-app`
+4. `cd my-app` and install any dependencies you need
+5. `exit` to exit the container
 
 Note: If more dependencies are needed, they can be added using the `react-app-setup` image.
 
