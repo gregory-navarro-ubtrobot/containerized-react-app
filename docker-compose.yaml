@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  react-dev-server:
+    build:
+      context: .
+      dockerfile: Dev.Dockerfile
+    volumes:
+      - "./my-app:/app"
+    ports:
+      - "3000:3000"
