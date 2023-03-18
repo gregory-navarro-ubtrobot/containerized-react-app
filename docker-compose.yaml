@@ -9,3 +9,10 @@ services:
       - "./my-app:/app"
     ports:
       - "3000:3000"
+  
+  ros-2:
+    build:
+      context: .
+      dockerfile: ROS2.Dockerfile
+    ports:
+      - "9090:9090"
