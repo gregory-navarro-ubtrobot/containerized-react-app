@@ -26,14 +26,14 @@ The first command builds the image and the second command launches the image. Th
 1. `docker build -f ./Dev.Dockerfile -t react-app:dev <app directory name selected earlier>`
 2. `docker run -it -v $(pwd)/<app directory name selected earlier>:/app -p 3000:3000 react-app:dev`
 
-## Launch a React Development Server in with docker compose
+## Launch a React Development Server for an existing react app with docker compose
 After initializing a react app, run the following commands to build and launch the development environment.
 
 1. `docker-compose up --build`
 
 If everything is working, you should be able to navigate to `localhost:3000` and see the React app.
 
-## To build a production image from an existing React app [UNFINISHED] [UNTESTED]
+## Launch a production image for an existing React app [UNFINISHED] [UNTESTED]
 Run the following commands to build and launch the image described in the Dockerfile `Prod.Dockerfile`.
 
 The first command builds the image and the second command launches the image.
