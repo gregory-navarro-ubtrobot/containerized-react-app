@@ -23,10 +23,10 @@ Run the following commands to build and launch the image described in the Docker
 
 The first command builds the image and the second command launches the image. The third command launches a React development server.
 
-1. `docker build -f < ./Dev.Dockerfile -t react-app:dev <app directory name selected earlier>`
+1. `docker build -f ./Dev.Dockerfile -t react-app:dev <app directory name selected earlier>`
 2. `docker run -it -v $(pwd)/<app directory name selected earlier>:/app -p 3000:3000 react-app:dev`
 
-## To build a production image from an existing React app
+## To build a production image from an existing React app [UNFINISHED] [UNTESTED]
 Run the following commands to build and launch the image described in the Dockerfile `Prod.Dockerfile`.
 
 The first command builds the image and the second command launches the image.
