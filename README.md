@@ -1,5 +1,15 @@
-# Containerized React App
-This repo outlines the steps to create a containerized React app using Docker.
+# Containerized React App Development Server + ROS2
+
+This repo outlines the steps to launch two containers with docker compose.
+
+`react-dev-server`
+- React app development server running on port 3000 
+- sources code from the host machine, the mounted volume is defined in the docker-compose.yaml file
+
+`ros2`
+- ROS2 development server running a ros2 web bridge on port 9090
+- arbitrary ROS2 commands can be issued this container by running `docker exec` commands to access a bash shell
+
 These should run on both Linux and MacOS.
 
 ## Prerequisites
